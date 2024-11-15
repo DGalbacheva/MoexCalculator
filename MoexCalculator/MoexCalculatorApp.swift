@@ -2,7 +2,7 @@
 //  MoexCalculatorApp.swift
 //  MoexCalculator
 //
-//  Created by MacBook Pro 15 on 15.11.2024.
+//  Created by Doroteya Galbacheva on 15.11.2024.
 //
 
 import SwiftUI
