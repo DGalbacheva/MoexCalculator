@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		33996DAC2CE7764800C9C990 /* MoexCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DAB2CE7764800C9C990 /* MoexCalculatorApp.swift */; };
-		33996DAE2CE7764800C9C990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DAD2CE7764800C9C990 /* ContentView.swift */; };
 		33996DB02CE7764B00C9C990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33996DAF2CE7764B00C9C990 /* Assets.xcassets */; };
 		33996DB32CE7764B00C9C990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33996DB22CE7764B00C9C990 /* Preview Assets.xcassets */; };
 		33996DBA2CE77B0D00C9C990 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DB92CE77B0D00C9C990 /* Currency.swift */; };
 		33996DBE2CE77F1500C9C990 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */; };
 		33996DC02CE78C5400C9C990 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */; };
+		33996DC22CE90DBF00C9C990 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DC12CE90DBF00C9C990 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33996DA82CE7764800C9C990 /* MoexCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoexCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33996DAB2CE7764800C9C990 /* MoexCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoexCalculatorApp.swift; sourceTree = "<group>"; };
-		33996DAD2CE7764800C9C990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33996DAF2CE7764B00C9C990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33996DB22CE7764B00C9C990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33996DB92CE77B0D00C9C990 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		33996DC12CE90DBF00C9C990 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				33996DAB2CE7764800C9C990 /* MoexCalculatorApp.swift */,
-				33996DAD2CE7764800C9C990 /* ContentView.swift */,
 				33996DAF2CE7764B00C9C990 /* Assets.xcassets */,
 				33996DB12CE7764B00C9C990 /* Preview Content */,
 				33996DB92CE77B0D00C9C990 /* Currency.swift */,
 				33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */,
 				33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */,
+				33996DC12CE90DBF00C9C990 /* CalculatorView.swift */,
 			);
 			path = MoexCalculator;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33996DBA2CE77B0D00C9C990 /* Currency.swift in Sources */,
-				33996DAE2CE7764800C9C990 /* ContentView.swift in Sources */,
 				33996DAC2CE7764800C9C990 /* MoexCalculatorApp.swift in Sources */,
 				33996DBE2CE77F1500C9C990 /* CalculatorModel.swift in Sources */,
+				33996DC22CE90DBF00C9C990 /* CalculatorView.swift in Sources */,
 				33996DC02CE78C5400C9C990 /* CalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
