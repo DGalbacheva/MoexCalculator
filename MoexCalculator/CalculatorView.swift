@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CalculatorView: View {
     
-    @ObservedObject var viewModel: CalculatorViewModel // 1
+    @EnvironmentObject var viewModel: CalculatorViewModel // 1
     @State private var isPickerPresented = false
     
     var body: some View {
@@ -69,7 +69,7 @@ struct CalculatorView: View {
 
 struct CalculatorView_Previews: PreviewProvider { // 14
     static var previews: some View {
-        CalculatorView(viewModel: CalculatorViewModel())
+        CalculatorView()
     }
 }
 

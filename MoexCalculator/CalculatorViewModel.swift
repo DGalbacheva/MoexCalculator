@@ -10,6 +10,14 @@ import Foundation
 final class CalculatorViewModel: ObservableObject {     // 1
 
     private var model = CalculatorModel()               // 2
+    
+    enum State {
+        case loading    // data is loading
+        case content    // data loaded
+        case error      // error loading data
+    }
+    
+    @Published var state: State = .content
 
     @Published var topCurrency: Currency = .CNY         // 3
     @Published var bottomCurrency: Currency = .RUR      // 4
