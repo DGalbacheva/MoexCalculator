@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CurrencyInput: View {
     
-    var currency: Currency
-    var amount: Double
-    var calculator: (Double) -> Void
+    let currency: Currency
+    let amount: Double
+    let calculator: (Double) -> Void
+    let tapHandler: () -> Void
     
     var numberFormatter: NumberFormatter = { // 13
         var nf = NumberFormatter()
@@ -35,6 +36,7 @@ struct CurrencyInput: View {
                     .font(.title2)
             }
             .frame(height: 100)
+            .onTapGesture(perform: tapHandler)
 
             let topBinding = Binding<Double>(
                     get: {
@@ -58,6 +60,7 @@ struct CurrencyInput: View {
     CurrencyInput(
         currency: .RUR,
         amount: 1000,
-        calculator: { _ in}
+        calculator: { _ in},
+        tapHandler: {}
     )
 }
