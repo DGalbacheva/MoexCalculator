@@ -14,6 +14,7 @@
 		33996DBE2CE77F1500C9C990 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */; };
 		33996DC02CE78C5400C9C990 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */; };
 		33996DC22CE90DBF00C9C990 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DC12CE90DBF00C9C990 /* CalculatorView.swift */; };
+		33996DC42CE9151E00C9C990 /* CurrencyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33996DC32CE9151E00C9C990 /* CurrencyInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		33996DC12CE90DBF00C9C990 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		33996DC32CE9151E00C9C990 /* CurrencyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				33996DBD2CE77F1500C9C990 /* CalculatorModel.swift */,
 				33996DBF2CE78C5400C9C990 /* CalculatorViewModel.swift */,
 				33996DC12CE90DBF00C9C990 /* CalculatorView.swift */,
+				33996DC32CE9151E00C9C990 /* CurrencyInput.swift */,
 			);
 			path = MoexCalculator;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				33996DBA2CE77B0D00C9C990 /* Currency.swift in Sources */,
 				33996DAC2CE7764800C9C990 /* MoexCalculatorApp.swift in Sources */,
 				33996DBE2CE77F1500C9C990 /* CalculatorModel.swift in Sources */,
+				33996DC42CE9151E00C9C990 /* CurrencyInput.swift in Sources */,
 				33996DC22CE90DBF00C9C990 /* CalculatorView.swift in Sources */,
 				33996DC02CE78C5400C9C990 /* CalculatorViewModel.swift in Sources */,
 			);
