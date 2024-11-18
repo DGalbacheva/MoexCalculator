@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class CalculatorViewModel: ObservableObject {     // 1
 
@@ -24,6 +25,37 @@ final class CalculatorViewModel: ObservableObject {     // 1
         
     @Published var topAmount: Double = 0                // 5
     @Published var bottomAmount: Double = 0             // 6
+    
+    // Data loader
+    private let loader: MoexDataLoader
+    
+    // Combine subscription storage
+    private var subscriptions = Set<AnyCancellable>()
+    
+    // An initializer that accepts a bootloader variable
+    init(with loader: MoexDataLoader = MoexDataLoader()) {
+        self.loader = loader
+        fetchData()
+    }
+    
+    // A function that triggers a data request using the loader
+    // and sets the state variable depending on
+    //  from the download result
+    private func fetchData() {
+        loader.fetch().sink(
+            receiveCompletion: { [weak self] completion in
+                guard let self = self else { return }
+                if case .failure = completion {
+                    self.state = .error
+                }
+            },
+            receiveValue: { [weak self] currencyRates in
+                guard let self = self else { return }
+                self.model.setCurrencyRates(currencyRates)
+                self.state = .content
+            })
+        .store(in: &subscriptions)
+    }
     
     func setTopAmount(_ amount: Double) {               // 7
         topAmount = amount
